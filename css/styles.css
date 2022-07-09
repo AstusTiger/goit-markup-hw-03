@@ -278,8 +278,6 @@ header nav {
 .container-team {
     display: flex;
     justify-content: space-between;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 0px 0px 4px 4px;
     margin-top: 50px;
 }
 
@@ -297,6 +295,11 @@ header nav {
     background-color: var(--light-background);
 }
 
+.card {
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
+
 .member {
     font-weight: 500;
     font-size: 16px;
@@ -305,6 +308,7 @@ header nav {
     color: var(--black-text);
     text-align: center;
     letter-spacing: 0.03em;
+    margin-bottom: 10px;
 }
 
 .position {
@@ -314,17 +318,42 @@ header nav {
     text-align: center;
     letter-spacing: 0.03em;
 }
-
+.card>img {
+    display: block;
+}
 .borders {
     padding: auto;
-    border-left: 1px solid #ECECEC;;
+    border-left: 1px solid #ECECEC;
     border-right: 1px solid #ECECEC;
     border-bottom: 1px solid #ECECEC;
+    padding: 30px 0;
 }
 
 /* PORTFOLIO */
 
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+  
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
 /* buttons */
+
+.portfolio-filters {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 34px;
+}
+
 .buttons {
     font-family: Roboto, Raleway, sans-serif;
     text-align: center;
@@ -337,11 +366,14 @@ header nav {
     cursor: pointer;
     border-radius: 4px;
     letter-spacing: 0.03em;
+    border: transparent;
+    padding: 6px 22px;
 }
 
 .buttons:hover {
     background-color: var(--active-text);
     color: var(--white-text);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .buttons:focus {
@@ -353,6 +385,24 @@ header nav {
 .buttons:active {
     background-color: var(--active-text);
     color: var(--white-text);
+}
+
+.container-projects {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.container-projects img {
+    display: block;
+}
+
+.portfolio-card {
+    flex-basis: calc((100% - 60px) / 3);
+}
+
+.card-info {
+    padding: 20px 24px;
 }
 
 /* projects */
@@ -377,8 +427,20 @@ footer {
 background-color: var(--dark-background);
 }
 
+.footer-container {
+    display: block;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
 .footer-address {
     font-style: normal;
+}
+
+.address-container {
+    padding-top: 20px;
+    display: block;
+    gap: 9px;
 }
 
 .footer-text {

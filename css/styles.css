@@ -22,8 +22,8 @@ h5,
 h6,
 ul,
 p {
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
 /* base settings */
@@ -45,7 +45,7 @@ p {
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
-  }
+}
 
 .section {
     padding: 94px 0px;
@@ -180,7 +180,7 @@ header nav {
 .hero {
     background-color: var(--dark-background);
 }
-    
+
 
 .hero-slogan {
     font-weight: 900;
@@ -326,9 +326,11 @@ header nav {
     text-align: center;
     letter-spacing: 0.03em;
 }
+
 .card>img {
     display: block;
 }
+
 .borders {
     padding: auto;
     border-left: 1px solid #ECECEC;
@@ -346,7 +348,7 @@ header nav {
     margin: -1px;
     border: 0;
     padding: 0;
-  
+
     white-space: nowrap;
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
@@ -432,7 +434,7 @@ header nav {
 /* FOOTER */
 
 footer {
-background-color: var(--dark-background);
+    background-color: var(--dark-background);
 }
 
 .footer-container {

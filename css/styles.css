@@ -239,6 +239,10 @@ header nav {
     justify-content: space-between;
 }
 
+.without-padding-bottom {
+    padding-bottom: 0;
+}
+
 .title {
     font-weight: 700;
     font-size: 14px;
@@ -263,6 +267,10 @@ header nav {
     justify-content: space-between;
     background-color: var(--ultra-light-backgroud);
     margin-top: 50px;
+}
+
+.container-activity img {
+    display: block;
 }
 
 .activity {

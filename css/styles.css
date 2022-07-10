@@ -98,6 +98,14 @@ header nav {
     display: flex;
 }
 
+.list-item {
+    margin-right: 50px;
+}
+
+.list-item:last-child {
+    margin-right: 0;
+  }
+
 /* navigation */
 .menu-navigation {
     font-weight: 500;
@@ -107,7 +115,6 @@ header nav {
     color: var(--black-text);
     letter-spacing: 0.02em;
     display: block;
-    margin-right: 50px;
     padding-top: 32px;
     padding-bottom: 32px;
 }
@@ -177,10 +184,12 @@ header nav {
 /* STUDIO */
 
 /* hero */
+
 .hero {
     background-color: var(--dark-background);
+    padding-top: 200px;
+    padding-bottom: 200px;
 }
-
 
 .hero-slogan {
     font-weight: 900;
@@ -252,6 +261,7 @@ header nav {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     width: 270px;
+    margin-bottom: 10px;
 }
 
 .text {
@@ -361,7 +371,7 @@ header nav {
     display: flex;
     justify-content: center;
     gap: 8px;
-    margin-bottom: 34px;
+    margin-bottom: 50px;
 }
 
 .buttons {
@@ -397,13 +407,13 @@ header nav {
     color: var(--white-text);
 }
 
-.container-projects {
+.block-projects {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
 }
 
-.container-projects img {
+.block-projects img {
     display: block;
 }
 
@@ -445,12 +455,10 @@ footer {
 
 .footer-address {
     font-style: normal;
-}
-
-.address-container {
-    padding-top: 20px;
-    display: block;
+    display: flex;
+    flex-direction: column;
     gap: 9px;
+    margin-top: 20px;
 }
 
 .footer-text {

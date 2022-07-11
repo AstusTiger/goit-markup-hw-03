@@ -445,12 +445,12 @@ header nav {
 
 footer {
     background-color: var(--dark-background);
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .footer-container {
     display: block;
-    padding-top: 60px;
-    padding-bottom: 60px;
 }
 
 .footer-address {
